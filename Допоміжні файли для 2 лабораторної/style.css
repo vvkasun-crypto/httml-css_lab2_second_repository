@@ -1,0 +1,164 @@
+    /* Частина 1 */
+
+/* використайте селектор елемента body */
+body {
+  margin: 25px;
+  padding: 0;
+  background: rgb(226, 223, 223, 0.5);
+  background: url(sky.jpg);
+}
+
+/* використайте універсальний селектор */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* використайте селектор елемента header */
+header {
+  padding: 20px;
+  background: linear-gradient(grey, white, grey);
+}
+
+/* використайте селектор елемента для напису-слогана у заголовку сайта */
+header h1 {
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: grey 2px 2px;
+}
+
+/* використайте селектор елемента main */
+main {
+  float: left;
+  max-width: 75%;
+}
+
+/* використайте селектор потомка для класу side-menu всередині елемента aside */
+aside .side-menu {
+  float: right;
+  max-width: 25%;
+  min-width: 200px;
+  max-height: 200px;
+  background-color: #e4e6e5;
+  border: 1px solid steelblue;
+  border-radius: 5px;
+  margin: 80px 0 0 20px;
+}
+
+/* використайте селектор li всередині класу side-menu */
+.side-menu li {
+  margin: 7px 0;
+  list-style: none;
+}
+
+/* використайте селектор ідентифікатора для першого li (заголовок меню) */
+#menu-header {
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-decoration: underline;
+  color: black;
+}
+
+/* використайте селектор потомка для тегів li всередині .side-menu 
+   та селектор дочірніх елементів для тегів <a> всередині li */
+.side-menu li a {
+  text-decoration: none;
+  color: steelblue;
+  padding: 2px;
+}
+
+/* використайте селектор для всіх посилань <a> з псевдо-класом :hover */
+a:hover {
+  color: turquoise;
+  font-weight: bold;
+}
+
+/* використайте заголовки h2 з класом main-content */
+.main-content h2 {
+  font-size: 1.8rem;
+  text-decoration: underline;
+  text-align: center;
+  text-shadow: grey 2px 2px;
+}
+
+/* використайте тег p з класом main-content */
+.main-content p {
+  border: 1px solid #999;
+  border-radius: 5px;
+  padding: 6px;
+  margin-right: 20px;
+  color: #000;
+}
+
+/* використайте значення атрибуту data-id="1" з тегом p та з класом main-content */
+.main-content p[data-id="1"] {
+  background-color: #cdd4d6;
+}
+
+/* використайте значення атрибуту data-id="2" з тегом p та з класом main-content */
+.main-content p[data-id="2"] {
+  background-color: #e6f4f8;
+}
+
+/* виберіть першу лінію через псевдо-елемент ::first-line усіх параграфів p */
+.main-content p::first-line {
+  color: darkblue;
+}
+
+/* виберіть першу букву через псевдо-елемент ::first-letter */
+.main-content p::first-letter {
+  text-decoration: underline;
+  font-size: 1.6rem;
+}
+
+/* використайте p з дочірнім img */
+.main-content p img {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  transition: all 3s;
+}
+
+/* при наведенні курсора на зображення воно має збільшитись */
+.main-content p img:hover {
+  transform: scale(2);
+}
+
+/* виберіть футер за його атрибутом id */
+footer {
+  clear: both;
+  text-align: center;
+  height: 100px;
+  background: gray;
+  vertical-align: middle;
+  line-height: 100px;
+}
+
+/* Частина 2 */
+
+/*---- Блок навігації ----*/
+nav {
+  margin: 0;
+  border-bottom: #adb1b2 solid 1px;
+  padding: 25px 5px;
+  background: #e4e6e5;
+  text-align: center;
+}
+
+nav a {
+  padding: 0px 32px;
+  border-right: #868B8F dotted 2px;
+  font-size: 18px;
+  color: #044368;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: rgb(115, 103, 124);
+}
+
+nav a:last-child {
+  border-right: none;
+}
+/*---- кінець блока навігації ----*/
